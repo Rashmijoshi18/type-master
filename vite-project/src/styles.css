@@ -142,7 +142,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* TestPage.css */
 
 .page {
   min-height: 100vh;
@@ -244,7 +243,6 @@ button:hover {
 }
 
 
-/* ResultPage.css */
 
 html, body, #root {
   height: 100%;
@@ -553,7 +551,6 @@ html, body, #root {
   border-radius: 2px;
 }
 
-/* Mobile Menu */
 .navbar .mobile-menu {
   display: none;
   flex-direction: column;
@@ -577,7 +574,6 @@ html, body, #root {
   color: white;
 }
 
-/* Responsive */
 @media screen and (max-width: 768px) {
   .navbar ul {
     display: none;
@@ -587,7 +583,7 @@ html, body, #root {
     display: flex;
   }
 }
-/* Brand on Left */
+
 .navbar-brand {
   display: flex;
   align-items: center;
