@@ -1,0 +1,74 @@
+
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import paragraphs from '../data/paragraphs'; // your updated paragraph.js
+
+const TestPage = () => {
+  const [text, setText] = useState('');
+  const [userInput, setUserInput] = useState('');
+  const [startTime, setStartTime] = useState(null);
+  const [level, setLevel] = useState('easy');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    generateParagraph();
+  }, [level]);
+
+  const generateParagraph = () => {
+    const texts = paragraphs[level];
+    const random = texts[Math.floor(Math.random() * texts.length)];
+    setText(random);
+    setUserInput('');
+    setStartTime(null);
+  };
+
+  const handleChange = (e) => {
+    if (!startTime) setStartTime(Date.now());
+    setUserInput(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (!userInput.trim()) return;
+
+    const endTime = Date.now();
+    const timeTaken = (endTime - startTime) / 1000 / 60; // in minutes
+    const wordCount = userInput.trim().split(/\s+/).length;
+    const wpm = Math.round(wordCount / timeTaken);
+
+    const correctChars = userInput
+      .split('')
+      .filter((char, i) => char === text[i]).length;
+    const accuracy = Math.round((correctChars / text.length) * 100);
+
+    navigate('/result', {
+      state: { wpm, accuracy },
+    });
+  };
+
+  return (
+    <div className="page">
+      <h2>Typing Test</h2>
+
+      <label>Select Difficulty:</label>
+      <select value={level} onChange={(e) => setLevel(e.target.value)}>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <div className="test-paragraph">
+        <p>{text}</p>
+      </div>
+
+      <textarea
+        value={userInput}
+        onChange={handleChange}
+        placeholder="Start typing here..."
+      ></textarea>
+
+      <button onClick={handleSubmit}>Submit</button>
+    </div>
+  );
+};
+
+export default TestPage;
