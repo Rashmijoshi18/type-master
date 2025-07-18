@@ -503,3 +503,108 @@ html, body, #root {
   }
 }
 /* Base Navbar Styles */
+.navbar {
+  background: #333;
+  padding: 1rem 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #4f46e5;
+}
+
+/* Hamburger icon */
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.navbar .hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Mobile Menu */
+.navbar .mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #222;
+  padding: 1rem 1.5rem;
+}
+
+.navbar .mobile-menu.active {
+  display: flex;
+}
+
+.navbar .mobile-menu li {
+  margin: 0.5rem 0;
+}
+
+.navbar .mobile-menu li a {
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+  }
+}
+/* Brand on Left */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+}
+
+.brand-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
