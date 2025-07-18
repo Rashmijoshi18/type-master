@@ -1,7 +1,6 @@
 
 import { useEffect } from "react";
 // import './Home.css';
-
 const Home = () => {
   useEffect(() => {
     const style = document.createElement("style");

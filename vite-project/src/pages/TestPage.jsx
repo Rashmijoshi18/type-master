@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import paragraphs from '../data/paragraphs'; // your updated paragraph.js
+import paragraphs from '../data/paragraphs'; 
 
 const TestPage = () => {
   const [text, setText] = useState('');

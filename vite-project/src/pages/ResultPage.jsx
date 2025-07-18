@@ -1,20 +1,3 @@
-// import { useLocation, Link } from 'react-router-dom';
-
-// const ResultPage = () => {
-//   const location = useLocation();
-//   const { wpm, accuracy } = location.state || {};
-
-//   return (
-//     <div className="page">
-//       <h2>Result</h2>
-//       <p><strong>WPM:</strong> {wpm}</p>
-//       <p><strong>Accuracy:</strong> {accuracy}%</p>
-//       <Link to="/test"><button>Try Again</button></Link>
-//     </div>
-//   );
-// };
-
-// export default ResultPage;
 import { useLocation, Link } from 'react-router-dom';
 // import './ResultPage.css';
 
