@@ -36,7 +36,7 @@ const Navbar = () => {
         <li><Link to="/" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Home</Link></li>
         <li><Link to="/test" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Test</Link></li>
         <li><Link to="/result" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Result</Link></li>
-        <li><Link to="/about" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">About</Link></li>
+        
       </ul>
     </nav>
   );
