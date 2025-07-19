@@ -26,7 +26,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/test">Test</Link></li>
         <li><Link to="/result">Result</Link></li>
-        <li><Link to="/about">About</Link></li>
+        {/* <li><Link to="/about">About</Link></li> */}
       </ul>
 
       <ul className={`mobile-menu ${isOpen ? 'active' : ''}`}>
