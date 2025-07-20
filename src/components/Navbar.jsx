@@ -26,16 +26,16 @@ const Navbar = () => {
 
       
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><Link to="/" className="hover:text-indigo-500 transition-colors">Home</Link></li>
-        <li><Link to="/test" className="hover:text-indigo-500 transition-colors">Test</Link></li>
-        <li><Link to="/result" className="hover:text-indigo-500 transition-colors">Result</Link></li>
+        <li><Link to="/" className="hover:text-indigo-300 transition-colors">Home</Link></li>
+        <li><Link to="/test" className="hover:text-indigo-300 transition-colors">Test</Link></li>
+        <li><Link to="/result" className="hover:text-indigo-300 transition-colors">Result</Link></li>
         
       </ul>
 
       <ul className={`flex flex-col absolute top-full left-0 w-full bg-gray-900 px-6 py-4 md:hidden transition-all duration-300 ${isOpen ? 'flex' : 'hidden'}`}>
-        <li><Link to="/" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Home</Link></li>
-        <li><Link to="/test" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Test</Link></li>
-        <li><Link to="/result" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-400">Result</Link></li>
+        <li><Link to="/" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-300">Home</Link></li>
+        <li><Link to="/test" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-300">Test</Link></li>
+        <li><Link to="/result" onClick={toggleMobileMenu} className="py-2 hover:text-indigo-300">Result</Link></li>
         
       </ul>
     </nav>
