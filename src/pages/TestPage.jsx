@@ -54,21 +54,41 @@ const TestPage = () => {
     setUserInput(e.target.value);
   };
 
+  // const handleSubmit = () => {
+  //   if (!userInput.trim()) return;
+
+  //   const endTime = Date.now();
+  //   const timeTaken = (endTime - startTime) / 1000 / 60;
+  //   const wordCount = userInput.trim().split(/\s+/).length;
+  //   const wpm = Math.round(wordCount / timeTaken);
+
+  //   const correctChars = userInput
+  //     .split('')
+  //     .filter((char, i) => char === text[i]).length;
+  //   const accuracy = Math.round((correctChars / text.length) * 100);
+
+  //   navigate('/result', { state: { wpm, accuracy } });
+  // };
   const handleSubmit = () => {
-    if (!userInput.trim()) return;
+  if (!userInput.trim() || !startTime) return;
 
-    const endTime = Date.now();
-    const timeTaken = (endTime - startTime) / 1000 / 60;
-    const wordCount = userInput.trim().split(/\s+/).length;
-    const wpm = Math.round(wordCount / timeTaken);
+  const endTime = Date.now();
+  const timeTaken = (endTime - startTime) / 1000 / 60; // in minutes
 
-    const correctChars = userInput
-      .split('')
-      .filter((char, i) => char === text[i]).length;
-    const accuracy = Math.round((correctChars / text.length) * 100);
+  const inputWords = userInput.trim().split(/\s+/);
+  const targetWords = text.trim().split(/\s+/);
 
-    navigate('/result', { state: { wpm, accuracy } });
-  };
+  let correct = 0;
+  for (let i = 0; i < inputWords.length; i++) {
+    if (inputWords[i] === targetWords[i]) correct++;
+  }
+
+  const wpm = Math.round(inputWords.length / timeTaken);
+  const accuracy = Math.round((correct / targetWords.length) * 100);
+
+  navigate('/result', { state: { wpm, accuracy } });
+};
+
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
