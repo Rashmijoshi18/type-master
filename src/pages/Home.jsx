@@ -33,21 +33,21 @@ const Home = () => {
         </p>
 
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg transition duration-300 animate-[fadeInUp_1s_ease-out_0.4s]">
+          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg hover:scale-[1.02] hover:border-blue-500 transition duration-300 animate-[fadeInUp_1s_ease-out_0.4s]">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600">🎯 Real-time WPM</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Track your Words Per Minute live as you type — watch your speed grow!
             </p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg transition duration-300 animate-[fadeInUp_1s_ease-out_0.6s]">
+          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg hover:scale-[1.02] hover:border-blue-500 transition duration-300 animate-[fadeInUp_1s_ease-out_0.6s]">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600">📈 Result Insights</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Get instant feedback on your typing accuracy, speed, and error stats.
             </p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg transition duration-300 animate-[fadeInUp_1s_ease-out_0.8s]">
+          <div className="bg-white border border-gray-200 rounded-2xl p-10 min-h-[220px] flex flex-col justify-center shadow-md hover:shadow-lg hover:scale-[1.02] hover:border-blue-500 transition duration-300 animate-[fadeInUp_1s_ease-out_0.8s]">
             <h3 className="text-2xl font-semibold mb-4 text-blue-600">⚙ Difficulty Levels</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Try typing tests with short, long, easy, or advanced paragraph levels.
@@ -58,7 +58,7 @@ const Home = () => {
         <div className="mt-8 animate-[fadeInUp_1s_ease-out_1s]">
           <button
             onClick={() => navigate("/test")}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full text-lg shadow-md transition duration-300"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full text-lg shadow-md hover:shadow-lg hover:shadow-blue-500/40 transition duration-300"
           >
             Start Typing Test
           </button>
