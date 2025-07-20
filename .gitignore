@@ -1,4 +1,6 @@
-# Logs
+# -----------------------------------------------------
+# ✅ Logs
+# -----------------------------------------------------
 logs
 *.log
 npm-debug.log*
@@ -7,28 +9,58 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependency directories
-node_modules
+# -----------------------------------------------------
+# ✅ Dependency directories
+# -----------------------------------------------------
+node_modules/
 
-# Build output
-dist
-dist-ssr
+# -----------------------------------------------------
+# ✅ Build output (Vite, SSR, Vercel, etc.)
+# -----------------------------------------------------
+dist/
+dist-ssr/
+.out/              # Optional: for Vercel/Next.js edge builds
 
-# Local env files
-*.local
+# -----------------------------------------------------
+# ✅ Local environment files
+# -----------------------------------------------------
 .env
-.env.*
+.env.*             # Ignores all environment files
+!.env.example      # Except for example env file if used
 
-# Vite cache
-.vite
+# -----------------------------------------------------
+# ✅ Vite and other caches
+# -----------------------------------------------------
+.vite/
+.cache/            # Optional: other build tool caches
+.eslintcache       # ESLint cache
 
-# Editor directories and files
+# -----------------------------------------------------
+# ✅ Editor-specific settings
+# -----------------------------------------------------
 .vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+!.vscode/extensions.json    # Keep team-shared recommended extensions
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# -----------------------------------------------------
+# ✅ System files
+# -----------------------------------------------------
+.DS_Store           # macOS
+Thumbs.db           # Windows
+
+# -----------------------------------------------------
+# ✅ JetBrains (optional)
+# -----------------------------------------------------
+*.iml
+.idea/
+
+# -----------------------------------------------------
+# ✅ Miscellaneous
+# -----------------------------------------------------
+*.tgz               # Package tarballs
+*.bak               # Backup files
