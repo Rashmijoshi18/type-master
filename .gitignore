@@ -1,6 +1,4 @@
-# -----------------------------------------------------
-# ✅ Logs
-# -----------------------------------------------------
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -9,58 +7,28 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# -----------------------------------------------------
-# ✅ Dependency directories
-# -----------------------------------------------------
-node_modules/
+# Dependency directories
+node_modules
 
-# -----------------------------------------------------
-# ✅ Build output (Vite, SSR, Vercel, etc.)
-# -----------------------------------------------------
-dist/
-dist-ssr/
-.out/              # Optional: for Vercel/Next.js edge builds
+# Build output
+dist
+dist-ssr
 
-# -----------------------------------------------------
-# ✅ Local environment files
-# -----------------------------------------------------
+# Local env files
+*.local
 .env
-.env.*             # Ignores all environment files
-!.env.example      # Except for example env file if used
+.env.*
 
-# -----------------------------------------------------
-# ✅ Vite and other caches
-# -----------------------------------------------------
-.vite/
-.cache/            # Optional: other build tool caches
-.eslintcache       # ESLint cache
+# Vite cache
+.vite
 
-# -----------------------------------------------------
-# ✅ Editor-specific settings
-# -----------------------------------------------------
+# Editor directories and files
 .vscode/*
-!.vscode/extensions.json    # Keep team-shared recommended extensions
-.idea/
+!.vscode/extensions.json
+.idea
+.DS_Store
 *.suo
-*.ntvs*
+.ntvs
 *.njsproj
 *.sln
 *.sw?
-
-# -----------------------------------------------------
-# ✅ System files
-# -----------------------------------------------------
-.DS_Store           # macOS
-Thumbs.db           # Windows
-
-# -----------------------------------------------------
-# ✅ JetBrains (optional)
-# -----------------------------------------------------
-*.iml
-.idea/
-
-# -----------------------------------------------------
-# ✅ Miscellaneous
-# -----------------------------------------------------
-*.tgz               # Package tarballs
-*.bak               # Backup files
