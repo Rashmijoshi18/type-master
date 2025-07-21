@@ -37,7 +37,7 @@ const ResultPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white shadow-2xl rounded-2xl p-8 max-w-md w-full text-center animate-[fadeScale_0.8s_ease-out]">
         
         <div className="text-5xl mb-4">{getFeedback().split(" ")[0]}</div>
