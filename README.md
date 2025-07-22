@@ -1,4 +1,4 @@
-# TypeMaster
+# 💻 TypeMaster
 
 A modern, interactive typing test application designed to help users evaluate and improve their typing speed and accuracy.
 
@@ -123,12 +123,11 @@ The build process automatically:
 
 ## 📱 Usage
 
-1. **Select Test Type**: Choose between time-based or word-based tests
-2. **Configure Settings**: Adjust difficulty, theme, or text type
-3. **Begin Test**: Click "Start" and begin typing the displayed text
-4. **Monitor Performance**: Watch real-time WPM and accuracy metrics
-5. **Review Results**: Analyze detailed performance breakdown
-6. **Track Progress**: View historical performance data
+
+1. **Configure Settings**: Adjust difficulty or text type
+2. **Begin Test**: Click "Start" and begin typing the displayed text
+3. **Monitor Performance**: Watch real-time WPM and accuracy metrics
+4. **Review Results**: Analyze detailed performance breakdown
 
 ## 🎨 Customization Options
 
@@ -164,7 +163,6 @@ TypeMaster tracks comprehensive typing statistics:
 - **Targeted Practice**: Focus on specific keys or letter combinations
 - **Error Analysis**: Identify and practice problematic key patterns
 - **Progressive Difficulty**: Gradually increase text complexity
-- **Custom Texts**: Upload your own practice materials
 - **Typing Goals**: Set and track personal improvement targets
 
 ## 🤝 Contributing
