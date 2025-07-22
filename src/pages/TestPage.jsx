@@ -114,7 +114,7 @@ const TestPage = () => {
           <p className="text-red-500 text-center">{error}</p>
         ) : (
           <>
-            <div className="bg-gray-100 p-5 rounded-lg border mb-6 text-gray-800 leading-relaxed text-lg min-h-[130px]">
+            <div className="select-none bg-gray-100 p-5 rounded-lg border mb-6 text-gray-800 leading-relaxed text-lg min-h-[130px]">
               {text}
             </div>
 
