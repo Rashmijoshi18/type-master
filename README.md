@@ -99,6 +99,39 @@ npm start
 ```
 
 
+## 📁 Project Folder Structure
+
+```bash
+TYPING/
+├── node_modules/
+├── public/
+│   ├── logo.png
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── logo.png
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   └── Navbar.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── ResultPage.jsx
+│   │   └── TestPage.jsx
+│   ├── utils/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── README.md
+├── vercel.json
+└── vite.config.js
+
 
 
 ### Building for Production
@@ -175,9 +208,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## 🙏 Acknowledgments
 
