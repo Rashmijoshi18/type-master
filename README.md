@@ -32,7 +32,6 @@ Visit the application at: [https://type-master-lac.vercel.app/](https://type-mas
 - **State Management**: React Context API or useState/useReducer hooks
 - **Analytics**: Local storage for progress tracking
 - **Build Tool**: Vite or Create React App
-- **Icons**: Heroicons or Lucide React (if used)
 
 ## 📊 How It Works
 
