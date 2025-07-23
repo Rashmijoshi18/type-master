@@ -223,13 +223,6 @@ If you encounter any issues or have suggestions:
 - Contact: https://www.rashmijoshi.me/
 - Documentation: Available in the `/docs` folder
 
-## 🔄 Version History
-
-- **v1.0.0**: Initial release with basic typing test functionality
-- **v1.1.0**: Added multiple test modes and themes
-- **v1.2.0**: Implemented progress tracking and analytics
-- **v1.3.0**: Mobile responsiveness and accessibility improvements
-
 ---
 
 **Happy Typing!** 🎯✨
