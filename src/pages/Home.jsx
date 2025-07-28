@@ -7,20 +7,6 @@ const Home = () => {
   useEffect(() => {
     const style = document.createElement("style");
     style.innerHTML = `
-      @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      
-      @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-      }
-      
-      @keyframes glow {
-        0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
-        50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
-      }
       
       .feature-card {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,19 +69,6 @@ const Home = () => {
         animation: glow 2s infinite;
       }
       
-      .title-hover:hover {
-        background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        animation: pulse 1.5s infinite;
-      }
-      
-      .description-hover:hover {
-        color: #374151;
-        transform: scale(1.02);
-        transition: all 0.3s ease;
-      }
     `;
     document.head.appendChild(style);
   }, []);
@@ -104,7 +77,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-center px-4 sm:px-8 py-10">
       <div className="max-w-6xl mx-auto text-center space-y-10">
         
-        <h1 className="text-4xl sm:text-5xl font-extrabold animate-[fadeInUp_1s_ease-out] title-hover cursor-pointer">
+        <h1 className="text-4xl sm:text-5xl font-extrabold ">
           Welcome to <span className="text-blue-600">TypeMaster</span>
         </h1>
 
