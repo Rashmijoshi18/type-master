@@ -75,12 +75,10 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-center px-4 sm:px-8 py-20">
       <div className="max-w-6xl mx-auto text-center space-y-12">
         
-        {/* Heading */}
         <h1 className="text-4xl sm:text-5xl font-extrabold">
           Welcome to <span className="text-blue-600">TypeMaster</span>
         </h1>
 
-        {/* Description */}
         <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-600">
           Sharpen your typing skills with interactive tests. Choose from{" "}
           <strong className="text-gray-800 hover:text-blue-600 transition-colors duration-200">Easy</strong>,{" "}
@@ -89,8 +87,6 @@ const Home = () => {
           <em className="text-blue-500 hover:text-blue-700">real-time WPM</em> and{" "}
           <em className="text-blue-500 hover:text-blue-700">accuracy</em>!
         </p>
-
-        {/* Feature Cards */}
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 animate-[fadeInUp_1s_ease-out_0.4s]">
           <div className="feature-card bg-white border border-gray-200 rounded-2xl p-8 sm:p-10 min-h-[220px] flex flex-col justify-center shadow-md cursor-pointer">
             <h3 className="text-2xl font-semibold mb-3 text-blue-600">🎯 Real-time WPM</h3>
@@ -107,13 +103,10 @@ const Home = () => {
             <p className="text-gray-700 text-lg leading-relaxed">Try typing tests with short, long, easy, or advanced paragraph levels.</p>
           </div>
         </div>
-
-        {/* Motivational Quote */}
         <div className="max-w-3xl mx-auto bg-white border border-blue-200 rounded-2xl p-6 shadow-inner text-lg italic text-blue-800 transition-all duration-500 hover:scale-[1.02]">
           "Practice like you've never won. Perform like you've never lost." 💪
         </div>
 
-        {/* CTA Button */}
         <div className="mt-6 animate-[fadeInUp_1s_ease-out_0.8s]">
           <button
             onClick={() => navigate("/test")}
