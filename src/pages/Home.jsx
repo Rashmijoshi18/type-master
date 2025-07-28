@@ -72,7 +72,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-center px-4 sm:px-8 py-20">
+    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-center px-4 sm:px-8 py-29">
       <div className="max-w-6xl mx-auto text-center space-y-12">
         
         <h1 className="text-4xl sm:text-5xl font-extrabold">
